@@ -5,7 +5,7 @@ module.exports = (client) => {
   cron.schedule('0 12 * * 1', () => {
     const channel = client.channels.cache.get(config.announceChannelId);
     if (channel) {
-      channel.send("⚔️ Début du **premier tour** des combats d’occupation ! Que la guilde montre sa force !");
+      channel.send("⚔️ Début du **premier tour** des combats d’occupation !");
       console.log("message send for the first turn")
     }
   });
@@ -13,7 +13,7 @@ module.exports = (client) => {
   cron.schedule('0 12 * * 4', () => {
     const channel = client.channels.cache.get(config.announceChannelId);
     if (channel) {
-      channel.send("⚔️ Début du **deuxième tour** des combats d’occupation ! Préparez vos attaques !");
+      channel.send("⚔️ Début du **deuxième tour** des combats d’occupation !");
       console.log("message send for the second turn")
     }
   });
